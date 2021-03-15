@@ -26,6 +26,12 @@ export class CalculadoraComponent implements OnInit {
         case "-":
         this.resultado=Number(this.num1)-Number(this.num2);
         break;
+        case "*":
+          this.resultado=Number(this.num1)*Number(this.num2);
+          break;
+          case "/":
+            this.resultado=Number(this.num1)/Number(this.num2);
+            break;
 
       default:
         break;
