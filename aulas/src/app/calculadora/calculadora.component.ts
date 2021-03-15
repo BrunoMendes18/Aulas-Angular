@@ -19,8 +19,6 @@ export class CalculadoraComponent implements OnInit {
 
   Soma()
   {
-
-
     switch (this.sinal) {
       case "+":
         this.resultado=Number(this.num1)+Number(this.num2);
