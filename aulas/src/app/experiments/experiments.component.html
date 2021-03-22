@@ -1,2 +1,12 @@
-<input type="text" (input)="changeName($event)" value={{name}} [style.background]="name">
+<input type="text" (input)="changeName($event)" value={{name}} [style.background]="name" #refExp>
 <p>Olá, {{name}}</p>
+
+<h2>Diretiva Ng For</h2>
+<div *ngFor="let animal of arrayAnimais">
+<h4>{{animal}}</h4>
+</div>
+
+<app-exp2 [nomeRecebido]='name'></app-exp2>
+
+<button (click)="analisarReferencia()">Teste</button>
+
