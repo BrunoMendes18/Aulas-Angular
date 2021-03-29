@@ -21,11 +21,19 @@ export class EvAndRefComponent implements OnInit {
     this.cor=corR;
   }
 
-  analisarReferencia()
+  buttonColor()
   {
-    console.log(this.referencia.nativeElement.value);
-    this.referencia.nativeElement.style.background="black";
+    this.referencia.nativeElement.style.background="red";
+  }
 
+  buttonHeight()
+  {
+    this.referencia.nativeElement.style.padding="15px";
+  }
+
+  buttonWidth()
+  {
+    this.referencia.nativeElement.style.width="35px";
   }
 
 }

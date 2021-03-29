@@ -1,5 +1,10 @@
 <br>
-<input type="text" [style.background]="cor" (mouseenter)='changeColor("red")' (focus)='changeColor("pink")' (input)='changeColor("grey")' #refExp>
+<h2>Exercicio 1</h2>
+<input type="text" [style.background]="cor" (mouseenter)='changeColor("red")' (focus)='changeColor("pink")' (input)='changeColor("green")' (blur)='changeColor("grey")' (copy)='changeColor("yellow")'>
 
-
-<button (click)="analisarReferencia()">Botao1</button>
+<br><br>
+<h2>Exercicio 3</h2>
+<input #refExp>
+<button (click)="buttonColor()">MudarCor</button>
+<button (click)="buttonHeight()">MudarHeight</button>
+<button (click)="buttonWidth()">MudarWidth</button>

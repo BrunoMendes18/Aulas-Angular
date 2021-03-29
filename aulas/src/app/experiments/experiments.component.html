@@ -1,3 +1,4 @@
+<br>
 <input type="text" (input)="changeName($event)" value={{name}} [style.background]="name" #refExp>
 <p>Olá, {{name}}</p>
 
@@ -5,6 +6,9 @@
 <div *ngFor="let animal of arrayAnimais">
 <h4>{{animal}}</h4>
 </div>
+
+<br>
+<button type="button" class="btn btn-success">Success</button>
 
 <app-exp2 [nomeRecebido]='name'></app-exp2>
 
