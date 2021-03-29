@@ -2,13 +2,17 @@
 <input type="text" (input)="changeName($event)" value={{name}} [style.background]="name" #refExp>
 <p>Olá, {{name}}</p>
 
+<br>
+<h1 *ngIf="name=='Bruno'">OH RAIO ES TU PAH!!!!</h1>
+
+<br>
 <h2>Diretiva Ng For</h2>
-<div *ngFor="let animal of arrayAnimais">
-<h4>{{animal}}</h4>
+<div *ngFor="let animal of arrayAnimais;let i=index">
+<h4 [ngStyle]="{'color':         i%2==0? 'green' : 'red'}">{{animal}}</h4>
 </div>
 
 <br>
-<button type="button" class="btn btn-success">Success</button>
+<button class="btn" [ngClass]="{'btn-warning': name=='Bruno' ?true : false}">Success</button>
 
 <app-exp2 [nomeRecebido]='name'></app-exp2>
 
