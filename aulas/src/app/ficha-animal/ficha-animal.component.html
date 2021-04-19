@@ -1,9 +1,9 @@
 <select [ngModel)='animal']>
-  <option>Cão</option>
-  <option>Gato</option>
-  <option>Papagaio</option>
-  <option>Texugo</option>
+  <option *ngFor="let animal of especie">{{animal}}</option>
 </select>
 
-<app-escolher-animal [animalRecebido]='especie'></app-escolher-animal>
+<app-escolher-animal [animalRecebido]='animal'></app-escolher-animal>
 
+<div *ngFor="let animalAtual of animais">
+  <app-animal-reader [animalSerLido]='animal'></app-animal-reader>
+</div>

@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Preferencias } from '../classes/preferencias';
 
 @Component({
   selector: 'app-experiments',
@@ -12,6 +13,8 @@ export class ExperimentsComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  definicao:Preferencias=new Preferencias("pink","red");
 
   name:string="";
   arrayAnimais:Array<string>=["cão","gato","papagaio","texugo"];
