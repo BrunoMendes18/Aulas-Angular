@@ -1,11 +1,30 @@
-.active{
-  color:teal;
 
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-a{
-  color:black;
-  padding: 30px;
-  font-size: 20px;
+.topnav {
+  overflow: hidden;
+  background-color: #ffffff;
+}
 
+.topnav a {
+  float: left;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(161, 161, 161);
+  color: black;
+}
+
+.topnav a.active {
+  background-color: grey;
+  color: white;
 }

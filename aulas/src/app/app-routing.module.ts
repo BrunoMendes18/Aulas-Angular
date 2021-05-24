@@ -7,6 +7,7 @@ import { ReadMeGeneratorComponent } from './read-me-generator/read-me-generator.
 import { EvAndRefComponent } from './ev-and-ref/ev-and-ref.component';
 import { FichaAnimalComponent } from './ficha-animal/ficha-animal.component';
 import { EscolherAnimalComponent } from './escolher-animal/escolher-animal.component';
+import { Page404Component } from './page404/page404.component';
 
 const routes: Routes = [
   {path:"",component:HomeComponent},
@@ -16,7 +17,9 @@ const routes: Routes = [
   {path:"experiments",component:ExperimentsComponent},
   {path:"evAndRef",component:EvAndRefComponent},
   {path:"fichaAnimal",component:FichaAnimalComponent},
-  {path:"escolherAnimal",component:EscolherAnimalComponent}
+  {path:"escolherAnimal",component:EscolherAnimalComponent},
+  {path:"notFound",component:Page404Component},
+  {path:"**",redirectTo:"notFound"}
 ];
 
 @NgModule({

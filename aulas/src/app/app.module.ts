@@ -15,6 +15,8 @@ import { FichaAnimalComponent } from './ficha-animal/ficha-animal.component';
 import { EscolherAnimalComponent } from './escolher-animal/escolher-animal.component';
 import { CookiesComponent } from './cookies/cookies.component';
 import { AnimalReaderComponent } from './ficha-animal/animal-reader/animal-reader.component';
+import { Page404Component } from './page404/page404.component';
+import { ListaDeComprasComponent } from './lista-de-compras/lista-de-compras.component';
 
 
 @NgModule({
@@ -31,6 +33,8 @@ import { AnimalReaderComponent } from './ficha-animal/animal-reader/animal-reade
     EscolherAnimalComponent,
     CookiesComponent,
     AnimalReaderComponent,
+    Page404Component,
+    ListaDeComprasComponent,
 
   ],
   imports: [

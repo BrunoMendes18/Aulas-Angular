@@ -1,0 +1,9 @@
+a{
+  margin-left:10px;
+}
+
+.router-link-active{
+  color:red;
+  font-weight: bold;
+  font-size:20px;
+}

@@ -1,0 +1,23 @@
+#image{
+width: 500px;
+height: 500px;
+margin:auto;
+position: relative;
+left:65vh;
+}
+
+#texto{
+  font-size: 25px;
+  color:red;
+  position: relative;
+  left: 82.5vh;
+  bottom:78.5vh;
+}
+
+#texto1{
+  font-size: 25px;
+  color:red;
+  position: relative;
+  left: 87vh;
+  bottom:17vh;
+}
