@@ -8,6 +8,8 @@ import { EvAndRefComponent } from './ev-and-ref/ev-and-ref.component';
 import { FichaAnimalComponent } from './ficha-animal/ficha-animal.component';
 import { EscolherAnimalComponent } from './escolher-animal/escolher-animal.component';
 import { Page404Component } from './page404/page404.component';
+import { ListaDeComprasComponent } from './lista-de-compras/lista-de-compras.component';
+import { ChuckComponent } from './chuck/chuck.component';
 
 const routes: Routes = [
   {path:"",component:HomeComponent},
@@ -19,6 +21,8 @@ const routes: Routes = [
   {path:"fichaAnimal",component:FichaAnimalComponent},
   {path:"escolherAnimal",component:EscolherAnimalComponent},
   {path:"notFound",component:Page404Component},
+  {path:"listaCompras",component:ListaDeComprasComponent},
+  {path:"chuck",component:ChuckComponent},
   {path:"**",redirectTo:"notFound"}
 ];
 

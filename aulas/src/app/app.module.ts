@@ -17,6 +17,10 @@ import { CookiesComponent } from './cookies/cookies.component';
 import { AnimalReaderComponent } from './ficha-animal/animal-reader/animal-reader.component';
 import { Page404Component } from './page404/page404.component';
 import { ListaDeComprasComponent } from './lista-de-compras/lista-de-compras.component';
+import { ChuckComponent } from './chuck/chuck.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AddComponent } from './lista-de-compras/add/add.component';
+import { BuyComponent } from './lista-de-compras/buy/buy.component';
 
 
 @NgModule({
@@ -35,12 +39,16 @@ import { ListaDeComprasComponent } from './lista-de-compras/lista-de-compras.com
     AnimalReaderComponent,
     Page404Component,
     ListaDeComprasComponent,
+    ChuckComponent,
+    AddComponent,
+    BuyComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
