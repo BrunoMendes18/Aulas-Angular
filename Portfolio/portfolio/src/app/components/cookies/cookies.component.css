@@ -10,8 +10,8 @@
   justify-content:space-around;
   animation-name:subir;
   animation-duration:2s;
+  animation-fill-mode: forwards;
 }
-
 
 @keyframes subir{
   from{bottom:-25vh;}
