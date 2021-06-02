@@ -13,6 +13,10 @@
   animation-fill-mode: forwards;
 }
 
+#cookie{
+  width: 25px;
+}
+
 @keyframes subir{
   from{bottom:-25vh;}
   to{bottom:0}

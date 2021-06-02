@@ -14,6 +14,7 @@ import { Pagina404Component } from './components/pagina404/pagina404.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { AskChuckServiceComponent } from './services/ask-chuck-service/ask-chuck-service.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     ChuckNorrisComponent,
     CorPorParametroComponent,
     Pagina404Component,
-    NavbarComponent
+    NavbarComponent,
+    AskChuckServiceComponent
   ],
   imports: [
     BrowserModule,
