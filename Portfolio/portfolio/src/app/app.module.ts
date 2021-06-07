@@ -8,13 +8,15 @@ import { CalculadoraComponent } from './components/calculadora/calculadora.compo
 import { EvAndRefComponent } from './components/ev-and-ref/ev-and-ref.component';
 import { CookiesComponent } from './components/cookies/cookies.component';
 import { ListaDeComprasComponent } from './components/lista-de-compras/lista-de-compras.component';
-import { ChuckNorrisComponent } from './components/chuck-norris/chuck-norris.component';
-import { CorPorParametroComponent } from './components/cor-por-parametro/cor-por-parametro.component';
 import { Pagina404Component } from './components/pagina404/pagina404.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { AskChuckServiceComponent } from './services/ask-chuck-service/ask-chuck-service.component';
+import { ChuckComponent } from './components/chuck/chuck.component';
+import { AddComponent } from './components/lista-de-compras/add/add.component';
+import { BuyComponent } from './components/lista-de-compras/buy/buy.component';
+import { PColorComponent } from './components/p-color/p-color.component';
+import { SColorComponent } from './components/p-color/s-color/s-color.component';
 
 @NgModule({
   declarations: [
@@ -24,12 +26,15 @@ import { AskChuckServiceComponent } from './services/ask-chuck-service/ask-chuck
     EvAndRefComponent,
     CookiesComponent,
     ListaDeComprasComponent,
-    ChuckNorrisComponent,
-    CorPorParametroComponent,
     Pagina404Component,
     NavbarComponent,
-    AskChuckServiceComponent
+    ChuckComponent,
+    AddComponent,
+    BuyComponent,
+    PColorComponent,
+    SColorComponent,
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
